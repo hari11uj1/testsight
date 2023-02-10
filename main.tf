@@ -31,7 +31,7 @@ resource "azurerm_resource_group" "new_resource111" {
 
 resource "azapi_resource" "purviewresource2" {
   type      = "Microsoft.Purview/accounts@2021-07-01"
-  name      = "harishperview12"
+  name      = "harishperview1o2"
   location  = "East US 2"
   parent_id = azurerm_resource_group.new_resource111.id
 
