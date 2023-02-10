@@ -6,6 +6,8 @@ resource "azurerm_resource_group" "new_resource101" {
 
 
 
+
+
 resource "azapi_resource" "purviewresource1" {
   type      = "Microsoft.Purview/accounts@2021-07-01"
   name      = "harishperview12"
