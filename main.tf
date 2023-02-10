@@ -1,6 +1,6 @@
-resource "azurerm_resource_group" "new_resource11" {
-  name     = "new_resource11"
-  location = "West Europe"
+resource "azurerm_resource_group" "new_resource101" {
+  name     = "new_resource101"
+  location = "East US 2"
 }
 
 
@@ -9,8 +9,8 @@ resource "azurerm_resource_group" "new_resource11" {
 resource "azapi_resource" "purviewresource1" {
   type      = "Microsoft.Purview/accounts@2021-07-01"
   name      = "harishperview12"
-  location  = "West Europe"
-  parent_id = azurerm_resource_group.new_resource11.id
+  location  = "East US 2"
+  parent_id = azurerm_resource_group.new_resource101.id
 
   identity {
     type = "SystemAssigned"
